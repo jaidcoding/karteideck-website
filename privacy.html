@@ -18,7 +18,7 @@
   .content { max-width: 720px; margin: 60px auto; padding: 0 40px 80px; }
   h1 { font-size: 36px; font-weight: 900; margin-bottom: 8px; }
   .date { color: #aaa; font-size: 14px; margin-bottom: 40px; }
-  h2 { font-size: 18px; font-weight: 800; margin: 32px 0 12px; }
+  h2 { font-size: 18px; font-weight: 800; margin: 32px 0 12px; color: #1a1a2e; }
   p { font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 12px; }
   ul { padding-left: 20px; margin-bottom: 12px; }
   li { font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 6px; }
@@ -26,6 +26,12 @@
   footer { padding: 40px; text-align: center; border-top: 1px solid #f0f0f0; }
   footer a { color: #4f46e5; text-decoration: none; margin: 0 12px; font-size: 14px; }
   footer p { color: #aaa; font-size: 13px; margin-top: 12px; }
+  
+  @media (max-width: 600px) {
+    nav { padding: 16px 20px; }
+    .content { padding: 0 20px 60px; }
+    h1 { font-size: 28px; }
+  }
 </style>
 </head>
 <body>
@@ -46,13 +52,14 @@
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="privacy.html">Privacy</a>
+    <a href="terms-of-use.html">Terms</a>
     <a href="support.html">Support</a>
   </div>
 </nav>
 
 <div class="content">
   <h1>Privacy Policy</h1>
-  <p class="date">Last updated: March 15, 2026</p>
+  <p class="date">Last updated: March 19, 2026</p>
 
   <p>KarteiDeck ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use the KarteiDeck app ("App").</p>
 
@@ -83,6 +90,9 @@
   <h2>Text-to-Speech</h2>
   <p>KarteiDeck uses Apple's built-in AVSpeechSynthesizer for German pronunciation. This feature processes text on-device and does not send any data to external servers.</p>
 
+  <h2>In-App Purchases</h2>
+  <p>KarteiDeck uses RevenueCat to handle in-app purchases and subscriptions. When you make a purchase, your payment information is processed by Apple and is not stored by KarteiDeck. For RevenueCat's privacy practices, please see their <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a>.</p>
+
   <h2>Children's Privacy</h2>
   <p>KarteiDeck is suitable for all ages. We do not knowingly collect personal information from children. Since all data is stored locally and no data is transmitted, there are no special risks for younger users.</p>
 
@@ -96,6 +106,7 @@
 
 <footer>
   <a href="privacy.html">Privacy Policy</a>
+  <a href="terms-of-use.html">Terms of Use</a>
   <a href="support.html">Support</a>
   <p>© 2026 JaidDev. All rights reserved.</p>
 </footer>
