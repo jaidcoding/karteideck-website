@@ -1,115 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — KarteiDeck</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; color: #1a1a2e; }
-  nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #f0f0f0; }
-  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .logo-icon { width: 40px; height: 40px; border-radius: 10px; overflow: hidden; }
-  .logo-icon svg { width: 40px; height: 40px; }
-  .logo-text { font-size: 20px; font-weight: 800; color: #1a1a2e; }
-  .nav-links { display: flex; gap: 24px; }
-  .nav-links a { font-size: 14px; font-weight: 500; color: #666; text-decoration: none; }
-  .nav-links a:hover { color: #4f46e5; }
-  .content { max-width: 720px; margin: 60px auto; padding: 0 40px 80px; }
-  h1 { font-size: 36px; font-weight: 900; margin-bottom: 8px; }
-  .date { color: #aaa; font-size: 14px; margin-bottom: 40px; }
-  h2 { font-size: 18px; font-weight: 800; margin: 32px 0 12px; color: #1a1a2e; }
-  p { font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 12px; }
-  ul { padding-left: 20px; margin-bottom: 12px; }
-  li { font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 6px; }
-  a { color: #4f46e5; }
-  footer { padding: 40px; text-align: center; border-top: 1px solid #f0f0f0; }
-  footer a { color: #4f46e5; text-decoration: none; margin: 0 12px; font-size: 14px; }
-  footer p { color: #aaa; font-size: 13px; margin-top: 12px; }
-  
-  @media (max-width: 600px) {
-    nav { padding: 16px 20px; }
-    .content { padding: 0 20px 60px; }
-    h1 { font-size: 28px; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | KarteiDeck</title>
+  <meta name="description" content="Read the KarteiDeck privacy policy, including local device storage, notifications, and purchase processing details.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-shell">
+    <header class="site-header fade-in">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="assets/app-icon.jpg" alt="KarteiDeck app icon">
+          <span class="brand-copy">
+            <span class="brand-name">KarteiDeck</span>
+            <span class="brand-tag">German that actually sticks</span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="support.html">Support</a>
+          <a class="active" href="privacy.html">Privacy</a>
+          <a href="terms-of-use.html">Terms</a>
+        </div>
+      </nav>
+    </header>
 
-<nav>
-  <a href="index.html" class="logo">
-    <div class="logo-icon">
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <g transform="rotate(-45, 20, 20)">
-          <rect x="-20" y="-20" width="80" height="27" fill="#1a1a1a"/>
-          <rect x="-20" y="7" width="80" height="27" fill="#CC0000"/>
-          <rect x="-20" y="34" width="80" height="27" fill="#FFCE00"/>
-        </g>
-      </svg>
-    </div>
-    <span class="logo-text">KarteiDeck</span>
-  </a>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="terms-of-use.html">Terms</a>
-    <a href="support.html">Support</a>
+    <main>
+      <section class="page-hero">
+        <div class="hero-panel page-hero-card fade-in delay-1">
+          <div class="eyebrow">Privacy Policy</div>
+          <h1 class="page-title">Your progress stays <span class="accent-text">close to your device</span>.</h1>
+          <p class="page-subtitle">
+            KarteiDeck is designed around minimal data collection and local-first storage. This page explains what is stored,
+            what is not transmitted, and where purchase-related tooling is involved.
+          </p>
+          <div class="meta-row">Last updated: March 19, 2026</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="legal-grid">
+          <article class="article-shell fade-in">
+            <p>KarteiDeck ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use the KarteiDeck app ("App").</p>
+
+            <h2>Information We Collect</h2>
+            <p>KarteiDeck is designed with privacy in mind. We collect minimal information:</p>
+            <ul>
+              <li><strong>No account required.</strong> You do not need to create an account to use KarteiDeck.</li>
+              <li><strong>Local storage only.</strong> All your progress, streak data, XP, and settings are stored locally on your device using Apple's SwiftData framework.</li>
+              <li><strong>No data transmitted.</strong> Your personal data never leaves your device. We do not have servers that store your information.</li>
+            </ul>
+
+            <h2>Data Stored on Your Device</h2>
+            <p>The following data is stored locally on your device:</p>
+            <ul>
+              <li>Your display name and avatar initial</li>
+              <li>Study progress, including mastery levels, review dates, XP, and streaks</li>
+              <li>App settings and preferences</li>
+              <li>Cosmetic unlocks and equipped items</li>
+            </ul>
+            <p>This data is stored only on your device and is deleted if you uninstall the app or reset your progress within the app.</p>
+
+            <h2>Analytics and Tracking</h2>
+            <p>KarteiDeck does not use third-party analytics, advertising SDKs, or tracking frameworks. We do not track your usage, location, or behavior.</p>
+
+            <h2>Notifications</h2>
+            <p>If you enable notifications, KarteiDeck will send you daily reminders to study. Notification permissions are managed entirely by iOS and can be revoked at any time in your device settings.</p>
+
+            <h2>Text-to-Speech</h2>
+            <p>KarteiDeck uses Apple's built-in AVSpeechSynthesizer for German pronunciation. This feature processes text on-device and does not send any data to external servers.</p>
+
+            <h2>In-App Purchases</h2>
+            <p>KarteiDeck uses RevenueCat to handle in-app purchases and subscriptions. When you make a purchase, your payment information is processed by Apple and is not stored by KarteiDeck. For RevenueCat's privacy practices, please see their <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>.</p>
+
+            <h2>Children's Privacy</h2>
+            <p>KarteiDeck is suitable for all ages. We do not knowingly collect personal information from children. Since all data is stored locally and no data is transmitted, there are no special risks for younger users.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:support@karteideck.app">support@karteideck.app</a>.</p>
+          </article>
+
+          <aside class="legal-callout fade-in delay-1">
+            <div class="eyebrow">Quick read</div>
+            <h3>Privacy at a glance</h3>
+            <p>KarteiDeck is intentionally local-first. No account, no analytics SDK, and no cloud profile required to study.</p>
+            <div class="note-box">
+              <p><strong>Stored locally:</strong> progress, settings, streaks, unlocks.</p>
+            </div>
+            <div class="note-box">
+              <p><strong>Handled externally for purchases:</strong> Apple billing and RevenueCat purchase infrastructure.</p>
+            </div>
+            <p><a href="support.html">Need help understanding anything here?</a></p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-card">
+        <div>
+          <div class="brand-name">KarteiDeck</div>
+          <div class="footer-copy">A cleaner policy experience that still matches the product's local-first posture.</div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
   </div>
-</nav>
-
-<div class="content">
-  <h1>Privacy Policy</h1>
-  <p class="date">Last updated: March 19, 2026</p>
-
-  <p>KarteiDeck ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use the KarteiDeck app ("App").</p>
-
-  <h2>Information We Collect</h2>
-  <p>KarteiDeck is designed with privacy in mind. We collect minimal information:</p>
-  <ul>
-    <li><strong>No account required.</strong> You don't need to create an account to use KarteiDeck.</li>
-    <li><strong>Local storage only.</strong> All your progress, streak data, XP, and settings are stored locally on your device using Apple's SwiftData framework.</li>
-    <li><strong>No data transmitted.</strong> Your personal data never leaves your device. We do not have servers that store your information.</li>
-  </ul>
-
-  <h2>Data Stored on Your Device</h2>
-  <p>The following data is stored locally on your device:</p>
-  <ul>
-    <li>Your display name and avatar initial</li>
-    <li>Study progress (mastery levels, review dates, XP, streaks)</li>
-    <li>App settings and preferences</li>
-    <li>Cosmetic unlocks and equipped items</li>
-  </ul>
-  <p>This data is stored only on your device and is deleted if you uninstall the app or reset your progress within the app.</p>
-
-  <h2>Analytics and Tracking</h2>
-  <p>KarteiDeck does not use any third-party analytics, advertising SDKs, or tracking frameworks. We do not track your usage, location, or behavior.</p>
-
-  <h2>Notifications</h2>
-  <p>If you enable notifications, KarteiDeck will send you daily reminders to study. Notification permissions are managed entirely by iOS and can be revoked at any time in your device Settings.</p>
-
-  <h2>Text-to-Speech</h2>
-  <p>KarteiDeck uses Apple's built-in AVSpeechSynthesizer for German pronunciation. This feature processes text on-device and does not send any data to external servers.</p>
-
-  <h2>In-App Purchases</h2>
-  <p>KarteiDeck uses RevenueCat to handle in-app purchases and subscriptions. When you make a purchase, your payment information is processed by Apple and is not stored by KarteiDeck. For RevenueCat's privacy practices, please see their <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a>.</p>
-
-  <h2>Children's Privacy</h2>
-  <p>KarteiDeck is suitable for all ages. We do not knowingly collect personal information from children. Since all data is stored locally and no data is transmitted, there are no special risks for younger users.</p>
-
-  <h2>Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the date at the top of this page. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
-
-  <h2>Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-  <p><a href="mailto:support@karteideck.app">support@karteideck.app</a></p>
-</div>
-
-<footer>
-  <a href="privacy.html">Privacy Policy</a>
-  <a href="terms-of-use.html">Terms of Use</a>
-  <a href="support.html">Support</a>
-  <p>© 2026 JaidDev. All rights reserved.</p>
-</footer>
-
 </body>
 </html>

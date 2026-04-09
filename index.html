@@ -1,151 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KarteiDeck — Learn German with Flashcards</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; color: #1a1a2e; }
-
-  /* NAV */
-  nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid #f0f0f0; }
-  .logo { display: flex; align-items: center; gap: 12px; }
-  .logo-icon { width: 40px; height: 40px; border-radius: 10px; overflow: hidden; }
-  .logo-icon svg { width: 40px; height: 40px; }
-  .logo-text { font-size: 20px; font-weight: 800; color: #1a1a2e; }
-  .nav-links { display: flex; gap: 24px; }
-  .nav-links a { font-size: 14px; font-weight: 500; color: #666; text-decoration: none; }
-  .nav-links a:hover { color: #4f46e5; }
-
-  /* HERO */
-  .hero { text-align: center; padding: 80px 40px 60px; background: linear-gradient(180deg, #f5f3ff 0%, #fff 100%); }
-  .flag { font-size: 48px; margin-bottom: 16px; }
-  .hero h1 { font-size: 52px; font-weight: 900; color: #1a1a2e; letter-spacing: -1px; margin-bottom: 16px; line-height: 1.1; }
-  .hero h1 span { color: #4f46e5; }
-  .hero p { font-size: 18px; color: #666; max-width: 500px; margin: 0 auto 32px; line-height: 1.6; }
-  .app-store-btn { display: inline-block; background: #1a1a2e; color: #fff; padding: 14px 28px; border-radius: 14px; font-size: 15px; font-weight: 700; text-decoration: none; }
-  .app-store-btn:hover { background: #4f46e5; }
-
-  /* FEATURES */
-  .features { padding: 80px 40px; max-width: 900px; margin: 0 auto; }
-  .features h2 { font-size: 32px; font-weight: 900; text-align: center; margin-bottom: 48px; color: #1a1a2e; }
-  .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  .feature-card { background: #f8f7ff; border-radius: 20px; padding: 28px; border: 1.5px solid #e8e5ff; }
-  .feature-icon { font-size: 32px; margin-bottom: 12px; }
-  .feature-title { font-size: 16px; font-weight: 800; color: #1a1a2e; margin-bottom: 8px; }
-  .feature-desc { font-size: 14px; color: #666; line-height: 1.5; }
-
-  /* STATS */
-  .stats { background: #4f46e5; padding: 60px 40px; text-align: center; }
-  .stats-grid { display: flex; justify-content: center; gap: 60px; max-width: 600px; margin: 0 auto; }
-  .stat-num { font-size: 42px; font-weight: 900; color: #fff; }
-  .stat-lbl { font-size: 13px; color: rgba(255,255,255,0.7); font-weight: 600; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.05em; }
-
-  /* FOOTER */
-  footer { padding: 40px; text-align: center; border-top: 1px solid #f0f0f0; }
-  footer a { color: #4f46e5; text-decoration: none; margin: 0 12px; font-size: 14px; }
-  footer p { color: #aaa; font-size: 13px; margin-top: 12px; }
-
-  @media (max-width: 600px) {
-    .hero h1 { font-size: 32px; }
-    .feature-grid { grid-template-columns: 1fr; }
-    .stats-grid { flex-direction: column; gap: 32px; }
-    nav { padding: 16px 20px; }
-    .hero { padding: 48px 20px 40px; }
-    .features { padding: 48px 20px; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KarteiDeck | App Store</title>
+  <meta name="description" content="KarteiDeck helps you build real German recall with a frequency-ranked deck, spaced repetition, pronunciation, grammar, and conversation-focused practice.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-shell">
+    <header class="site-header fade-in">
+      <nav class="nav">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="assets/app-icon.jpg" alt="KarteiDeck app icon">
+          <span class="brand-copy">
+            <span class="brand-name">KarteiDeck</span>
+            <span class="brand-tag">German that actually sticks</span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms-of-use.html">Terms</a>
+        </div>
+      </nav>
+    </header>
 
-<nav>
-  <div class="logo">
-    <div class="logo-icon">
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <g transform="rotate(-45, 20, 20)">
-          <rect x="-20" y="-20" width="80" height="27" fill="#1a1a1a"/>
-          <rect x="-20" y="7" width="80" height="27" fill="#CC0000"/>
-          <rect x="-20" y="34" width="80" height="27" fill="#FFCE00"/>
-        </g>
-      </svg>
-    </div>
-    <span class="logo-text">KarteiDeck</span>
+    <main>
+      <section class="hero">
+        <div class="hero-panel hero-copy fade-in delay-1">
+          <div class="eyebrow">Built for daily German momentum</div>
+          <h1 class="hero-title">Learn German with a deck that feels <span class="accent-text">alive</span>.</h1>
+          <p class="hero-subtitle">
+            KarteiDeck combines a 5,000+ frequency-ranked word base with spaced repetition, native-style pronunciation,
+            grammar coaching, and conversation-minded practice so you stop memorizing in circles and start building recall that lasts.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="https://apps.apple.com/us/app/karteideck/id6760624597" target="_blank" rel="noreferrer">Download on the App Store</a>
+            <a class="button-secondary" href="support.html">See support</a>
+          </div>
+          <p class="hero-footnote">Available now on the App Store for iPhone.</p>
+        </div>
+
+        <div class="hero-panel hero-stack fade-in delay-2">
+          <div class="showcase">
+            <div class="showcase-top">
+              <div class="showcase-badge"><strong>5,000+</strong> words ranked by frequency</div>
+              <div class="stat-pill"><strong>A1-C2</strong> progress framing</div>
+            </div>
+
+            <div class="showcase-phone">
+              <div class="phone-header">
+                <img class="phone-icon" src="assets/app-icon.jpg" alt="KarteiDeck icon">
+                <div>
+                  <div class="phone-label">Inside the app</div>
+                  <div class="phone-title">Study that compounds</div>
+                </div>
+              </div>
+
+              <div class="phone-card-grid">
+                <div class="metric-card">
+                  <span class="metric-label">Review engine</span>
+                  <span class="metric-value">SM-2 tuned</span>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-label">Pronunciation</span>
+                  <span class="metric-value">Tap and hear</span>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-label">Learning loop</span>
+                  <span class="metric-value">Words, grammar, missions</span>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-label">Device model</span>
+                  <span class="metric-value">Progress stays local</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-bottom">
+              <div class="micro-pill">Audio support</div>
+              <div class="micro-pill">Conversation practice</div>
+              <div class="micro-pill">Tiered vocabulary unlocks</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">What makes it different</div>
+            <h2 class="section-title">Less busywork. More <span class="accent-text">actual retrieval</span>.</h2>
+          </div>
+          <p class="section-copy">
+            The app is designed around repetition with pressure, not just exposure. You keep moving between recognition,
+            recall, listening, grammar, and habit loops that reinforce each other.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card fade-in">
+            <div class="feature-kicker">Core deck</div>
+            <h3>Frequency first</h3>
+            <p>The highest-value German words come first, with tiered unlocks that keep the deck practical instead of random.</p>
+            <ul class="feature-list">
+              <li>5,000+ words sorted by rank</li>
+              <li>Tier progression tied to mastery</li>
+              <li>Fast access to what matters most</li>
+            </ul>
+          </article>
+
+          <article class="feature-card fade-in delay-1">
+            <div class="feature-kicker">Retention</div>
+            <h3>Spaced repetition with teeth</h3>
+            <p>Cards return when they should, not when a streak mechanic feels like it. The review loop is built to protect memory.</p>
+            <ul class="feature-list">
+              <li>SM-2 based scheduling</li>
+              <li>Due cards prioritized over fluff</li>
+              <li>Clear mastery progression</li>
+            </ul>
+          </article>
+
+          <article class="feature-card fade-in delay-2">
+            <div class="feature-kicker">Beyond flashcards</div>
+            <h3>Grammar and conversation pressure</h3>
+            <p>KarteiDeck now reaches past isolated words with lessons, speaking-oriented prompts, and guided practice.</p>
+            <ul class="feature-list">
+              <li>Grammar drills and explanations</li>
+              <li>Listening and pronunciation support</li>
+              <li>Conversation-oriented learning paths</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-panel">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow">How it compounds</div>
+              <h2 class="section-title">A study loop built for <span class="accent-text">real momentum</span>.</h2>
+            </div>
+            <p class="section-copy">
+              Every layer exists to make the next review more efficient. Learn the word, hear it, use it, and come back before it fades.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-step">
+              <div class="step-number">01</div>
+              <h3>Meet the useful words first</h3>
+              <p>Start inside a ranked deck so your study time pushes everyday comprehension instead of trivia.</p>
+            </article>
+
+            <article class="timeline-step">
+              <div class="step-number">02</div>
+              <h3>Revisit at the right moment</h3>
+              <p>The review engine brings cards back before they disappear, turning recall into a habit rather than a guessing game.</p>
+            </article>
+
+            <article class="timeline-step">
+              <div class="step-number">03</div>
+              <h3>Bridge into actual German use</h3>
+              <p>Pronunciation, grammar content, and conversation-focused practice help words survive outside the deck.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">Product signals</div>
+            <h2 class="section-title">Serious enough to feel useful. Warm enough to <span class="accent-text">come back daily</span>.</h2>
+          </div>
+          <p class="section-copy">
+            KarteiDeck isn't trying to look like every other language app. It should feel focused, premium, and deeply practical from the first screen.
+          </p>
+        </div>
+
+        <div class="metrics-band">
+          <div class="metric-card">
+            <span class="metric-label">Vocabulary scope</span>
+            <span class="metric-value">5,000+</span>
+            <p class="body-copy">Frequency-ranked German words with browser and filter support in the product roadmap already visible in-app.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Progress model</span>
+            <span class="metric-value">A1-C2</span>
+            <p class="body-copy">Clear level framing gives learners a simple sense of where they are and what they are growing into.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Practice modes</span>
+            <span class="metric-value">Words + grammar + listening</span>
+            <p class="body-copy">The site now reflects that the app is broader than a single deck of cards.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Privacy posture</span>
+            <span class="metric-value">Local-first</span>
+            <p class="body-copy">Progress is stored on-device, with policy pages written to match the product's privacy stance.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-panel">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow">Need the essentials</div>
+              <h2 class="section-title">Support, privacy, and terms are still one tap away.</h2>
+            </div>
+            <p class="section-copy">
+              Marketing pages should sell the product, but they also need to do the dependable work: answer questions, set expectations, and stay easy to navigate.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-kicker">Support</div>
+              <h3>Fast answers</h3>
+              <p>FAQ-driven help plus a direct support email path when someone needs a real response.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-kicker">Privacy</div>
+              <h3>Local-first clarity</h3>
+              <p>Explains exactly what stays on-device, what purchase tooling is involved, and how notifications work.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-kicker">Terms</div>
+              <h3>Store-ready legal pages</h3>
+              <p>Subscription and purchase details stay accessible without burying the main product story.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-card">
+        <div>
+          <div class="brand-name">KarteiDeck</div>
+          <div class="footer-copy">German learning with sharper repetition, stronger habits, and a warmer product feel.</div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+          <a href="mailto:support@karteideck.app">support@karteideck.app</a>
+        </div>
+      </div>
+    </footer>
   </div>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="terms-of-use.html">Terms</a>
-    <a href="support.html">Support</a>
-  </div>
-</nav>
-
-<section class="hero">
-  <div class="flag">🇩🇪</div>
-  <h1>Learn German.<br><span>Actually.</span></h1>
-  <p>2,000 of the most common German words, ranked by frequency. Science-backed spaced repetition. Real progress.</p>
-  <a href="#" class="app-store-btn">📱 Download on the App Store</a>
-</section>
-
-<section class="features">
-  <h2>Everything you need to master German</h2>
-  <div class="feature-grid">
-    <div class="feature-card">
-      <div class="feature-icon">🧠</div>
-      <div class="feature-title">Spaced Repetition</div>
-      <div class="feature-desc">SM-2 algorithm shows you cards at the perfect time. Study smarter, not harder.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🔥</div>
-      <div class="feature-title">Daily Streaks</div>
-      <div class="feature-desc">Build habits with daily streaks, XP goals, and weekly missions that keep you coming back.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🏆</div>
-      <div class="feature-title">Gamified Progress</div>
-      <div class="feature-desc">Earn tokens, unlock titles and cosmetics, and track your German level from A1 to C2.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🔊</div>
-      <div class="feature-title">Audio Pronunciation</div>
-      <div class="feature-desc">Hear every word in native German. Perfect your pronunciation as you study.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">📊</div>
-      <div class="feature-title">Detailed Stats</div>
-      <div class="feature-desc">Track mastery levels, accuracy rate, streaks, and your estimated CEFR level.</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">✈️</div>
-      <div class="feature-title">Fully Offline</div>
-      <div class="feature-desc">All 2,000 words built in. No internet required. Study anywhere, anytime.</div>
-    </div>
-  </div>
-</section>
-
-<section class="stats">
-  <div class="stats-grid">
-    <div>
-      <div class="stat-num">2,000</div>
-      <div class="stat-lbl">German words</div>
-    </div>
-    <div>
-      <div class="stat-num">5</div>
-      <div class="stat-lbl">Vocabulary tiers</div>
-    </div>
-    <div>
-      <div class="stat-num">A1–C2</div>
-      <div class="stat-lbl">CEFR levels</div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <a href="privacy.html">Privacy Policy</a>
-  <a href="terms-of-use.html">Terms of Use</a>
-  <a href="support.html">Support</a>
-  <p>© 2026 JaidDev. All rights reserved.</p>
-</footer>
-
 </body>
 </html>
